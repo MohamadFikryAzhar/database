@@ -39,7 +39,13 @@ CREATE TABLE Categories (
 --a. Customers--
 --Create:--
 INSERT INTO Customers (name, email, phone)
-VALUES ('Mohamad Fikry Azhar', 'azharfikry6@gmail.com', '08128128218');
+VALUES 
+  ('Mohamad Fikry Azhar', 'azharfikry6@gmail.com', '08128128218'),
+  ('Fikry', 'azharaja@gmail.com', '08128128'),
+  ('Fik', 'azhja@gmail.com', '08123133128'),
+  ('Fikry Ajhar', 'azharajhar@gmail.com', '081484828'),
+  ('Fikry Azhar', 'azharazh@gmail.com', '081281465628'),
+  ('Mario Dandi', 'dandisubarjo@gmail.com', '08134428128');
 --Read:--
 SELECT * FROM Customers;
 --Update:--
@@ -53,7 +59,13 @@ WHERE customer_id = 1;
 --b. Products--
 --Create:--
 INSERT INTO Products (name, price, description)
-VALUES ('Product A', 11.99, 'Lorem Ipsum dolor sit amet');
+VALUES 
+  ('Product A', 11.99, 'Lorem Ipsum dolor sit amet'),
+  ('Product B', 10.99, 'Lorem Ipsum dolor sit'),
+  ('Product C', 9.99, 'Lorem Ipsum dolor amet'),
+  ('Product D', 8.99, 'Lorem Ipsum dolor'),
+  ('Product E', 7.99, 'Lorem Ipsum'),
+  ('Product F', 6.99, 'Lorem');
 --Read:--
 SELECT * FROM Products;
 --Update:--
@@ -67,7 +79,13 @@ WHERE product_id = 1;
 --c. Orders--
 --Create:--
 INSERT INTO Orders (customer_id, product_id, quantity, order_date)
-VALUES (1, 1, 2, '2023-06-25');
+VALUES 
+  (1, 7, 2, '2023-01-17'),
+  (2, 6, 2, '2022-03-23'),
+  (3, 5, 3, '2022-05-26'),
+  (4, 4, 4, '2021-04-31'),
+  (5, 3, 2, '2021-11-22'),
+  (6, 2, 2, '2022-12-09');
 --Read:--
 -- Menampilkan semua data dari tabel Orders
 SELECT * FROM Orders;
@@ -81,7 +99,13 @@ DELETE FROM Orders WHERE order_id = 1;
 --d. Categories--
 --Create:--
 INSERT INTO Categories (name, description)
-VALUES ('Category A', 'Lorem Ipsum dolor sit Amet');
+VALUES 
+  ('Category A', 'Lorem Ipsum dolor sit Amet'),
+  ('Category B', 'Lorem Ipsum dolor sit'),
+  ('Category C', 'Lorem Ipsum dolor'),
+  ('Category D', 'Lorem Ipsum'),
+  ('Category E', 'Lorem'),
+  ('Category F', 'Lorem Ipsum dolor Amet'),
 --Read:--
 SELECT * FROM Categories;
 SELECT * FROM Categories WHERE category_id = 1;
