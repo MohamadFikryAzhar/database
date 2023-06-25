@@ -80,11 +80,11 @@ WHERE product_id = 1;
 --Create:--
 INSERT INTO Orders (customer_id, product_id, quantity, order_date)
 VALUES 
-  (1, 7, 2, '2023-01-17'),
+  (1, 6, 2, '2023-01-17'),
   (2, 6, 2, '2022-03-23'),
   (3, 5, 3, '2022-05-26'),
-  (4, 4, 4, '2021-04-31'),
-  (5, 3, 2, '2021-11-22'),
+  (4, 4, 4, '2022-04-29'),
+  (5, 3, 2, '2022-11-22'),
   (6, 2, 2, '2022-12-09');
 --Read:--
 -- Menampilkan semua data dari tabel Orders
